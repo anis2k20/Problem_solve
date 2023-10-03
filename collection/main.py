@@ -4,7 +4,10 @@ def purchase(customer,size):
         s = int(input())
         p = int(input())
         if s in size:
-            customer_choice[f"{s}"].append(f"{p}")
+            if s not in customer_choice:
+                customer_choice.setdefault(f"{s}",[]).append(p)
+            else:
+                customer_choice.setdefault(f"{s}",[]).extend(p)
     print(customer_choice)
 
 
