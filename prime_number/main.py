@@ -13,3 +13,13 @@ for i in range(2,num+1):
             prime_nums.append(i)
 
 print(prime_nums)
+
+# Prime number interval print code
+x=0
+for i in range(1,len(prime_nums)):
+    interval = prime_nums[x+1]-prime_nums[x]
+    print(interval,end=" ")
+    x+=1
+
+
+
