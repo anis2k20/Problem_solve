@@ -1,5 +1,5 @@
 #n-th fibonacci number (1 1 2 3 5 8 13..........)
-n=10
+n=31
 
 a=0
 b=1
@@ -8,4 +8,4 @@ for i in range(n-2):
     fibbo = a+b
     a = b
     b = fibbo
-    print(fibbo,end=" ")
+    print(f"{fibbo}",end=" ")
